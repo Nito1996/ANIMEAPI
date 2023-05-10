@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet"
+        href="file:///C:/Users/randy/OneDrive/Escritorio/ProyectosCursoEmmanuel/EmmaHomeworks/ANIMEAPI/animeDetails/details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#mainLogo"><img id="mainLogo" onclick="window.location.reload()"
+                    src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\ANIMEAPI\images\DB.logo.png"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <i class="small material-icons materialIcons">auto_stories</i>
+                <li><a href="file:///C:/Users/randy/OneDrive/Escritorio/ProyectosCursoEmmanuel/EmmaHomeworks/ANIMEAPI/index.html"
+                        target="_blank">START</a></li>
+                <i class="small material-icons materialIcons">9k_plus</i>
+                <li><a href="#sinopsis" id="home_section">SYNOPSIS</a></li>
+                <i class="small material-icons materialIcons">4k_plus</i>
+                <li><a href="#episodes">EPISODES</a></li>
+
+                <!-- Modal Trigger -->
+                <a data-target="modal1" class="waves-effect waves-orange btn modal-trigger" id="inputButton"
+                    href="#modal1"><img id="loginImg"
+                        src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\ANIMEAPI\images\iconMale.png">
+                    LOGIN</a>
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal mainModal">
+                    <div class="modal-content">
+                        <div class="headModal">
+                            <img id="loginImg"
+                                src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\ANIMEAPI\images\pngwing.com (4).png"
+                                id="mainLogo" class="mainLogo1">
+                        </div>
+                        <form class="login-form">
+                            <div class="row">
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input class="validate" id="email" type="email" autocomplete="off">
+                                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="password" type="password" autocomplete="off">
+                                    <label for="password">Password</label>
+                                </div>
+                                <form action="#">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" checked="checked" />
+                                            <span style="color: black;"> Remember me</span>
+                                        </label>
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-purple btn-flat">LOGIN</a>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6 m6 l6">
+                                    <p class="margin medium-small"><a href="#" class="questions modal-close">Register
+                                            Now!</a></p>
+                                </div>
+                                <div class="input-field col s6 m6 l6">
+                                    <p class="margin right-align medium-small"><a href="#"
+                                            class="questions questions2 modal-close">Forgot
+                                            password?</a></p>
+                                </div>
+                            </div>
+                    </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="parallax-container">
+        <div class="parallax"><img class="parallaxImg"
+                src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\ANIMEAPI\images\Geto&Gojo_.jpeg">
+        </div>
+    </div>
+
+    <div class="row mainRowDiv" id="mainRowDiv">
+
+    </div>
+    <div>
+        <div class="col s12 push-s1 mainCardDetails">
+            <div class="card-content cardContent black-text mainTextCard" id="mainTextCardDiv">
+                <span class="card-title mainSinopsis btn"> <i class="small material-icons"
+                        id="sinopsis">collections_bookmark</i>Synopsis</span>
+            </div>
+        </div>
+
+        <div class="col s12 push-s1 mainCardDetails">
+            <div class="card-content cardContent cardContent2 black-text">
+                <span class="card-title mainSinopsis btn">
+                    <i class="small material-icons" id="episodes">fact_check</i>Episodes List</span>
+
+
+                <div class="row container mainRowContainer">
+                </div>
+                <div class="paginationDiv">
+                    <ul class="pagination insertPagination">
+                
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script
+        src="file:///C:/Users/randy/OneDrive/Escritorio/ProyectosCursoEmmanuel/EmmaHomeworks/ANIMEAPI/animeDetails/details.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

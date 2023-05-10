@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulting Anime-API</title>
+  <link rel="stylesheet"
+    href="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\ANIMEAPI\style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#mainLogo"><img id="mainLogo" onclick="window.location.reload()"
+          src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\ANIMEAPI\images\DB.logo.png"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <i class="small material-icons materialIcons">auto_stories</i>
+        <li><a href="#streaming" onclick="animeDirectoryAtReload()">START</a></li>
+        <i class="small material-icons materialIcons">9k_plus</i>
+        <li><a href="#newSeasons" id="home_section" onclick="window.location.reload()">NEW SEASONS</a></li>
+        <i class="small material-icons materialIcons">4k_plus</i>
+        <li><a href="#newEpisodes">NEW EPISODES</a></li>
+       
+        <!-- Modal Trigger -->
+        <a data-target="modal1" class="waves-effect waves-orange btn modal-trigger" id="inputButton" href="#modal1"><img
+            id="loginImg"
+            src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\ANIMEAPI\images\iconMale.png">
+          LOGIN</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal mainModal">
+          <div class="modal-content">
+            <div class="headModal">
+              <img id="loginImg"
+                src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\ANIMEAPI\images\pngwing.com (4).png"
+                id="mainLogo" class="mainLogo1">
+            </div>
+            <form class="login-form">
+              <div class="row">
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input class="validate" id="email" type="email" autocomplete="off">
+                  <label for="email" data-error="wrong" data-success="right">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" type="password" autocomplete="off">
+                  <label for="password">Password</label>
+                </div>
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" checked="checked" />
+                      <span style="color: black;"> Remember me</span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-purple btn-flat">LOGIN</a>
+              </div>
+              <div class="row">
+                <div class="input-field col s6 m6 l6">
+                  <p class="margin medium-small"><a href="#" class="questions modal-close">Register Now!</a></p>
+                </div>
+                <div class="input-field col s6 m6 l6">
+                  <p class="margin right-align medium-small"><a href="#" class="questions questions2 modal-close">Forgot
+                      password?</a></p>
+                </div>
+              </div>
+          </div>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="mainH3Div">
+    <i class="medium material-icons materialIcons iconConfig">9k_plus</i>
+    <h3 class="mainH3" id="newSeasons">New Seasons!</h3>
+  </div>
+
+  <div class="parallax-container">
+    <div class="parallax"><img class="parallaxImg"
+        src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\ANIMEAPI\images\5093213.jpg"></div>
+  </div>
+
+
+
+
+  <div class="mainH3Div mainH3Div2 ">
+    <i class="medium material-icons materialIcons iconConfig">7k_plus</i>
+    <h3 class="mainH3" id="streaming">Streaming!</h3>
+
+    <div class="inputSelect">
+    <label for="mainOption">FILTER BY TYPE</label>
+      <div class="input-field col s12">
+        <!-- Dropdown Trigger -->
+        <a class='dropdown-trigger btn' data-target='dropdown1'></a>
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+          <li class="selectedOptions" id="mainOption"
+            onclick="document.querySelector('.dropdown-trigger').textContent ='All', animeDirectoryAtReload()"><a
+              href="#!">All</a></li>
+              
+          <li class="selectedOptions"
+            onclick="document.querySelector('.dropdown-trigger').textContent ='TV', filterByType()"><a href="#!">TV</a>
+          </li>
+          <li class="selectedOptions"
+            onclick="document.querySelector('.dropdown-trigger').textContent ='Movie', filterByType()"><a
+              href="#!">Movie</a></li>
+          <li class="selectedOptions"
+            onclick="document.querySelector('.dropdown-trigger').textContent ='OVA', filterByType()"><a
+              href="#!">OVA</a></li>
+          <li class="selectedOptions"
+            onclick="document.querySelector('.dropdown-trigger').textContent ='Special', filterByType()"><a
+              href="#!">Special</a></li>
+          <li class="selectedOptions"
+            onclick="document.querySelector('.dropdown-trigger').textContent ='ONA', filterByType()"><a
+              href="#!">ONA</a></li>
+          <li class="selectedOptions"
+            onclick="document.querySelector('.dropdown-trigger').textContent ='Music', filterByType()"><a
+              href="#!">Music</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="input-field col s12">
+    <p id="filterByNameLabel" >FILTER BY NAME</p>
+      <input type="text" spellcheck="false"  id="autocomplete-input" class="autocomplete validate" id="search" placeholder="Search...">
+    </div>
+  </div>
+  
+
+  <div class="filtersDiv">
+  </div>
+
+
+  <div class="mainContainerDiv">
+    <div class="mainContent">
+      <div class="row mainCreatedRow container">
+      </div>
+    </div>
+  </div>
+
+  <div class="paginationDiv">
+    <ul class="pagination insertPagination">
+
+    </ul>
+  </div>
+
+  <div class="mainH3Div">
+    <i class="medium material-icons materialIcons iconConfig">4k_plus</i>
+    <h3 class="mainH3" id="newEpisodes">New Episodes!</h3>
+  </div>
+
+  <div class="parallax-container">
+    <div class="parallax"><img class="parallaxImg"
+        src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\ANIMEAPI\images\5093213.jpg"></div>
+  </div>
+
+
+  <script src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\ANIMEAPI\app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

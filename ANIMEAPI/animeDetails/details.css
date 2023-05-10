@@ -1,0 +1,680 @@
+body {
+    background-color: #000;
+}
+
+nav .nav-wrapper {
+    position: relative;
+    height: 100%;
+    background-color: #000;
+}
+
+#mainLogo {
+    max-width: 6%;
+    position: relative;
+    bottom: 30%;
+    left: 5%;
+    max-height: 160%;
+    cursor: pointer;
+    user-select: none;
+}
+
+#home_section {
+    width: 100%;
+}
+
+li {
+    user-select: none;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: #FF6600;
+}
+
+i.small {
+    font-size: 2rem;
+    margin-right: 1%;
+}
+
+ul:not(.browser-default) {
+    padding-left: 0px;
+    list-style-type: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .brand-logo {
+    position: absolute;
+    color: #fff;
+    display: block;
+    font-size: 2.1rem;
+    padding: 0;
+}
+
+
+#search {
+    background-color: #000;
+    color: #fff;
+    width: 30%;
+    margin-top: 1%;
+    border: solid 2px #fff;
+    border-radius: 25px;
+    font-family: sans-serif;
+    padding-left: 4%;
+
+}
+
+#search:focus {
+    color: #FFF;
+    font-size: medium;
+    background-color: darkblue;
+    transition-duration: 1s;
+    transition-property: background-color;
+}
+
+#inputButton {
+    width: 15%;
+    height: 66px;
+    font-family: sans-serif;
+    font-size: small;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #000;
+    color: #fff;
+}
+
+nav .input-field input {
+    padding-left: 0.5rem !important;
+}
+
+#inputButton:hover {
+    color: #fff;
+    background-color: #141519;
+}
+
+#loginImg {
+    width: 30%;
+    margin-right: 5%;
+    border-radius: 25px;
+    border: 10px;
+    border-color: #000;
+}
+
+#loginImg:hover {
+    transition-property: color;
+    transition-duration: 0.3s;
+    color: #FF6600;
+}
+
+#modal1 {
+    border-radius: 5%;
+}
+
+.modal-content {
+    height: 90%;
+}
+
+#modal1 {
+    width: 50%;
+    min-height: 85%;
+    overflow: hidden;
+}
+
+.modal-close {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 30%;
+}
+
+.modal-footer {
+    padding: 0% !important;
+    margin: 0% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.questions {
+    color: royalblue;
+    text-decoration: underline;
+}
+
+
+.headModal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainLogo1 {
+    width: 16% !important;
+}
+
+.validate {
+    position: relative;
+    color: black !important;
+    top: 14px;
+}
+
+
+.validate:focus {
+    color: #FFF;
+    background-color: #000;
+}
+
+.materialIcons {
+    max-width: 2%;
+    user-select: none;
+}
+
+.mainH3Div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 4%;
+    background-color: #FF6600;
+    box-shadow: 0px 1px 10px 1px;
+}
+
+.iconConfig {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.mainH3 {
+    margin: 0rem !important;
+}
+
+.mainH3::selection {
+    color: #FFF;
+}
+
+.iconConfig:hover {
+    transition-property: color;
+    transition-duration: 0.3s;
+    color: #FFF !important;
+}
+
+.materialIcons:hover {
+    transition-property: color;
+    transition-duration: 0.3s;
+    color: #FF6600;
+}
+
+nav ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1rem;
+    color: #fff;
+    display: block;
+    padding: 0 14px !important;
+    cursor: pointer;
+}
+
+.mainContent {
+    background-color: #FFF;
+}
+
+.parallaxImg {
+    width: 50%;
+}
+
+.imgCard {
+    height: 300px !important;
+}
+
+.card-content {
+    height: 65px;
+    margin-bottom: 5px;
+    padding: 5px 16px 1px 5px !important;
+    overflow: hidden;
+    background-color: #FF6600;
+}
+
+
+
+.card .card-content .card-title i {
+    position: absolute;
+    bottom: 14%;
+    left: 80%;
+}
+
+.card .card-title {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: serif;
+    font-style: oblique;
+}
+
+
+.card-reveal {
+    background-color: #000 !important;
+    border-radius: 5px;
+    padding: 5px !important;
+}
+
+.modifyIcon {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+.mainP {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 106%;
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+.secondP {
+    text-align: justify;
+}
+
+.firstMaterialIcons {
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+    background-color: #FF6600 !important;
+
+}
+
+.btn,
+.btn-large,
+.btn-small {
+    text-decoration: none !important;
+    color: #fff !important;
+    background-color: #000 !important;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+}
+
+.card .card-content p {
+    font-size: initial;
+    margin: 0;
+    font-weight: bolder;
+}
+
+/*//////////////////// SCROLLBAR ////////////////////*/
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #000;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FF6600;
+    border-radius: 10px;
+}
+
+.parallaxVideo {
+    width: 100%;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 300;
+    padding-right: 20%;
+}
+
+.videoContainer {
+    max-height: 100%;
+}
+
+.paginationDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+}
+
+.pagination li a {
+    color: #000 !important;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pageButton {
+    border: none;
+    font-size: 1.4rem;
+    pointer-events: none !important;
+    color: #000;
+    background-color: #FFF;
+}
+
+.right {
+    height: 100%;
+    width: 50% !important;
+}
+
+.inputSelect {
+    padding-left: 2%;
+    width: 15%;
+    height: 60px;
+}
+
+.dropdown-trigger {
+    bottom: 15px;
+    cursor: pointer;
+    position: relative;
+    height: 35px;
+    width: 50%;
+}
+
+#filterByNameLabel {
+    top: -10px !important;
+    left: 40px;
+    font-size: .8rem;
+    color: #9e9e9e;
+    cursor: default;
+    position: absolute;
+}
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 350px !important;
+}
+
+.mainCard {
+    position: relative;
+    bottom: 10%;
+    border-radius: 5px !important;
+    width: 38% !important;
+}
+
+.row .col.offset-m6 {
+    margin-left: 53% !important;
+}
+
+.row .col {
+    padding: 0 0.3rem !important;
+}
+
+.card {
+    margin: 0.2rem 0 1rem 0 !important;
+    bottom: 348px !important;
+}
+
+.organizingDiv {
+    display: flex;
+}
+
+#cardImg {
+    height: 345px;
+}
+
+.card-title {
+    color: #000 !important;
+    font-weight: bold !important;
+}
+
+.btnOnAiring {
+    width: 104% !important;
+    height: 94% !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex !important;
+    cursor: default !important;
+    padding-left: 12% !important;
+}
+
+.onAiringIcon {
+    position: relative;
+    right: 80%;
+    pointer-events: none;
+}
+
+.cardBtnModify {
+    position: absolute !important;
+    left: 150px !important;
+    bottom: 40px !important;
+    height: 6% !important;
+    width: 30%;
+    border-radius: 15px !important;
+    align-items: center;
+    text-align: center !important;
+    justify-content: center;
+    display: flex !important;
+    padding: 0px !important;
+    font-size: medium !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    background-color: #FF6600 !important;
+
+}
+
+.cardBtnModify:hover {
+    background-color: #000 !important;
+}
+
+.cardBtnRatingModify {
+    position: absolute !important;
+    left: 205px !important;
+    bottom: 65px !important;
+    height: 6% !important;
+    width: 15%;
+    border-radius: 5px !important;
+    align-items: center;
+    text-align: center !important;
+    justify-content: center;
+    display: flex !important;
+    padding: 0px !important;
+    font-size: small !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    background-color: #FF6600 !important;
+}
+
+.cardBtnRatingModify:hover {
+    background-color: #000 !important;
+}
+
+.mainTextCard {
+    height: 50%;
+    width: 50%;
+    pointer-events: none !important;
+}
+
+.mainRowDiv {
+    height: 0px;
+}
+
+.mainCardDetails {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.cardContent {
+    margin-left: 1%;
+    border-radius: 5px;
+    width: 98%;
+
+}
+
+.mainSinopsis {
+    width: 15%;
+    margin-left: 10% !important;
+    color: #FFF !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-top: 9px !important;
+}
+
+.mainTypesDiv {
+    display: flex;
+    padding-left: 60%;
+    position: relative;
+    bottom: 19% !important;
+    color: #FFF;
+    height: auto;
+    flex-wrap: wrap;
+    width: 101%;
+}
+
+#mainTypesCards {
+    margin-right: 1%;
+    color: #FFF !important;
+    border-radius: 10px;
+    height: 35px;
+    width: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 35px;
+    margin-top: 1%;
+}
+
+.description {
+    padding-left: 10%;
+    min-height: 48%;
+    overflow: auto;
+}
+
+.description1 {
+    position: relative;
+    bottom: 27px !important;
+    bottom: 10%;
+    min-height: 65%;
+    overflow: auto;
+    padding-right: 8%;
+    justify-content: initial;
+    display: flex;
+    text-align: justify;
+    font-size: large;
+    font-weight: bold;
+    color: #FFF;
+    overflow: hidden;
+}
+
+.description2 {
+    color: #FFF;
+}
+
+.cardContent2 {
+    height: auto;
+}
+
+.card.horizontal {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 94%;
+    height: 107%;
+    top: 0px;
+}
+
+.colModify{
+    margin-top: 3%;
+}
+
+.solving{
+  background-color: #fff;
+}
+
+.mainP2, .secondaryP {
+    height: 50%;
+    padding-left: 8%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: large !important;
+}
+
+.mainP2 {
+    text-align: center;
+}
+
+.secondaryP {
+    height: 50%;
+    text-align: center;  
+}
+
+#span1{
+    color: white !important;
+    height: 11px !important;
+    width: 100% !important;
+    font-size: medium !important;
+    padding-top: 0px !important;
+    padding-bottom: 35px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#cardContentId{
+    background-color: #FFF;
+}
+
+.divider{
+    background-color: #FF6600 !important;
+    height: 2px;
+}
+
+.cardImageUnic {
+    max-width: 40% !important;
+}
+
+.mainRowContainer {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.cardClick{
+    cursor: pointer !important;
+    user-select: all !important;
+    position: relative !important;
+}
+
+.pagination li.active {
+    background-color: unset !important;
+}
+
+.pagination li.activeOnDetails {
+    background-color: #fff;
+}
+
+.pageButton2 {
+    background-color: #FF6600 !important;
+}
